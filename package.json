@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/EspejoGabriel31/Project-PLAY-list#readme",
   "dependencies": {
+    "dotenv": "^16.0.1",
     "express": "^4.18.1"
   }
 }
