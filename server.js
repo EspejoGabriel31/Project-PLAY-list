@@ -19,7 +19,6 @@ app.use('/playlists', require('./controllers/playlist_controller'))
 
 
 app.get('/', (req,res) => {
-    // res.send('Hello World')
     res.render('home')
 })
 
