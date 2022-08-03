@@ -1,11 +1,12 @@
 h1, h2, h3, p {
     text-align: center;
-    color: blueviolet;
+    color: white;
 }
 
 
 body{
     background-color: black;
+    text-align: center;
 }
 
 
@@ -18,3 +19,18 @@ nav ul{
     list-style-type: none;
     margin: 0;
 }
+
+nav li{
+    display: inline;
+    margin-right: 25px;
+}
+
+nav a{ 
+    color: white;
+    font-size:1.5em;
+}
+
+nav a:hover{
+    color: greenyellow;
+    text-decoration: none;
+  }
