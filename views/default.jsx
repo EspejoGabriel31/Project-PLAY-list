@@ -1,7 +1,4 @@
 const React = require('react')
-<<<<<<< HEAD
-
-=======
 function Def (html) {
     return (
         <html>
@@ -28,4 +25,3 @@ function Def (html) {
 }
 
 module.exports = Def
->>>>>>> ruiz
