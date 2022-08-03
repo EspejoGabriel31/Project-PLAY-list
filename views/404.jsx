@@ -1,4 +1,4 @@
-const react = require('react')
+const React = require('react')
 const Def = require('./default')
 
 function err404pg(){
