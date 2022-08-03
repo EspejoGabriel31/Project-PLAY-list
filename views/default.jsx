@@ -18,6 +18,9 @@ function Def (html) {
                         <li>
                             <a href='/playlist'>Playlist</a>
                         </li>
+                        <li>
+                            <a href='/new'>New Playlist</a>
+                        </li>
                     </ul>
                 </nav>
                 {html.children}

@@ -14,7 +14,8 @@ app.use(express.urlencoded({extended: true}))
 
 //Controllers & Routes
 
-// app.use('/playlists', require('./controllers/playlist_controller'))
+
+app.use('/playlists', require('./controllers/playlist_controller'))
 
 
 app.get('/', (req,res) => {

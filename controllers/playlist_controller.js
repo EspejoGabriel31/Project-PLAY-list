@@ -1,8 +1,12 @@
 const router = require('express').Router()
 
+//NEW
+router.get('/new', (req, res) => {
+    res.render('playlists/new', {message})
+  });
+
+router.get('/', (req, res) => {
+    res.render('playlists/playlist')
+})
 
 module.exports = router
-
-// router.get('/' (req,res) => {
-
-// })
