@@ -3,8 +3,11 @@ const express = require('express')
 
 const app = express()
 
+app.set('views', __dirname + '/views')
+
 app.get('/', (req,res) => {
-    res.send('Hello World')
+    // res.send('Hello World')
+    res.render('home')
 })
 
 app.get('*', (req, res) => {
