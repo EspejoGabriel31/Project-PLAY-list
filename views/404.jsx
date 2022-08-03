@@ -1,15 +1,18 @@
 const React = require('react')
 const Def = require('./default')
 
-function err404pg(){
+function error404(){
     return(
         <Def>
             <main>
-                <h1>404 Page</h1>
-             <p>Page Not Found</p>
+                <h1>404 : PAGE NOT FOUND</h1>
+                <p>Page Not Found</p>
+                <div>
+                    
+                </div>
             </main>
         </Def>
     )
 }
 
-module.exports = err404pg
+module.exports = error404

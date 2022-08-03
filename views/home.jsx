@@ -5,7 +5,7 @@ function home(){
     return(
         <Def>
             <main>
-                <h1>PLAY-list</h1>
+                {/* <h1>PLAY-list</h1> */}
                 <div>
                     <h1>THIS BETTER WORK</h1>
                 </div>
