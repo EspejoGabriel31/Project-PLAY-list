@@ -13,8 +13,6 @@ app.use(express.urlencoded({extended: true}))
 // app.use(methodOverride('_method'))
 
 //Controllers & Routes
-
-
 app.use('/playlists', require('./controllers/playlist_controller'))
 
 
