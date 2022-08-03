@@ -5,7 +5,7 @@ const Def= require('./default')
         <Def>
             <main>
                 <h1>PLAY-List</h1>
-                <a href="/places">
+                <a href="/playlists">
 
                 </a>
             </main>
