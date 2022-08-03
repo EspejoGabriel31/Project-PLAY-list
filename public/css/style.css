@@ -1,0 +1,19 @@
+h1 {
+    text-align: center;
+    color: blueviolet;
+}
+
+body{
+    background-color: black;
+}
+
+
+nav{
+    background-color: blueviolet;
+    padding: 10px;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+}
