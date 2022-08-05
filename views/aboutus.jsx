@@ -1,10 +1,11 @@
 const React = require('react')
-const Def = require('../default')
+const Def = require('./default')
 
 function aboutUs() {
     return(
         <Def>
-            <main>
+          <h1>About Us</h1>
+            {/* <main>
             <div class="about-section">
   <h1>About Us Page</h1>
   <p>Some text about who we are and what we do.</p>
@@ -52,7 +53,7 @@ function aboutUs() {
     </div>
   </div>
 </div>
-            </main>
+            </main> */}
         </Def>
     )
 }
