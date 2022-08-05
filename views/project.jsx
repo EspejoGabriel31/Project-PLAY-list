@@ -1,18 +1,17 @@
 const React = require('react')
 const Def = require('./default')
 
-function error404(){
+function project() {
     return(
         <Def>
             <main>
-                <h1>404 : PAGE NOT FOUND</h1>
-                <p>Page Not Found</p>
                 <div>
-                    
+                    <h1>Project</h1>
+                    <h2>Timeline</h2>
                 </div>
             </main>
         </Def>
     )
 }
 
-module.exports = error404
+module.exports = project 

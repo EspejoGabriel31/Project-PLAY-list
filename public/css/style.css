@@ -1,3 +1,18 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                      Scrollbar
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+body::-webkit-scrollbar{
+    width: 0.4rem;
+}
+body::-webkit-scrollbar-track{
+    background: #1e1e24;
+}
+body::-webkit-scrollbar-thumb{
+    background: rgb(129, 17, 234);
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
 h1, h2, h3, p {
     text-align: center;
     color: white;
@@ -7,6 +22,7 @@ h1, h2, h3, p {
 body{
     background-color: black;
     text-align: center;
+    height: 1000px;
 }
 
 

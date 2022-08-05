@@ -13,13 +13,16 @@ app.use(express.urlencoded({extended: true}))
 // app.use(methodOverride('_method'))
 
 //Controllers & Routes
+<<<<<<< HEAD
 app.use('/places', require('.//controllers/playlist_controller'))
 
 // app.use('/playlists', require('./controllers/playlist_controller'))
+=======
+app.use('/playlists', require('./controllers/playlist_controller'))
+>>>>>>> 72a4bc4c6c304c5c14f4ed658a22c72519064e40
 
 
 app.get('/', (req,res) => {
-    // res.send('Hello World')
     res.render('home')
 })
 

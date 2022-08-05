@@ -16,7 +16,10 @@ function Def (html) {
                             <a href='/'>Home</a>
                         </li>
                         <li>
-                            <a href='/playlist'>Playlist</a>
+                            <a href='/playlists'>Playlist</a>
+                        </li>
+                        <li>
+                            <a href='/playlists/new'>New Playlist</a>
                         </li>
                     </ul>
                 </nav>

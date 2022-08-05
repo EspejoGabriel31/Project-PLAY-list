@@ -1,17 +1,17 @@
 const React = require('react')
 const Def = require('../default')
 
-function project() {
+function playlist() {
     return(
         <Def>
             <main>
                 <div>
-                    <h1>Project</h1>
-                    <h2>Timeline</h2>
+                    <h1>Test</h1>
                 </div>
             </main>
         </Def>
     )
+    
 }
 
-module.exports = project 
+module.exports = playlist
