@@ -1,42 +1,26 @@
-// EXPRESS & DEPENDECIES
-require('dotenv').config()
 const express = require('express')
+const path = require('path')
+const cors = require('cors')
+
+const PORT = process.env.PORT || 3001
 const app = express()
-
-//Express Settings
-app.set('views', __dirname + '/views')
-app.set('view engine', 'jsx')
-app.engine('jsx', require('express-react-views').createEngine())
-app.use(express.static('public'))
-app.use(express.urlencoded({extended: true}))
-
-// app.use(methodOverride('_method'))
-
-//Controllers & Routes
-
-// app.use('/places', require('.//controllers/playlist_controller'))
-
-// app.use('/playlists', require('./controllers/playlist_controller'))
-
-app.use('/playlists', require('./controllers/playlist_controller'))
+app.use(cors())
 
 
+app.use(express.static(path.resolve(__dirname, '../client/build')))
 
-
-app.get('/aboutUs', (req,res) =>{
-    res.render('aboutUs')
-})
-
-app.get('/', (req,res) => {
-    res.render('home')
+//Handle GET requrests to /api route
+app.get('/api', (req, res) => {
+    res.json({
+        message: "Hello from PLAY-list Server!"
+    })
 })
 
 app.get('*', (req, res) => {
-    res.render('404')
+    res.sendFild(path.resolve(__dirname, '../client/build', 'index.html'))
 })
 
+app.listen(PORT, () => {
+    console.log(`Server listening on ${PORT}`)
+})
 
-
-
-// PORT 
-app.listen(process.env.PORT) //SET PORT TO 3000
