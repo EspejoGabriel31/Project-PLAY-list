@@ -13,6 +13,7 @@ app.use(express.urlencoded({extended: true}))
 // app.use(methodOverride('_method'))
 
 //Controllers & Routes
+app.use('/places', require('.//controllers/playlist_controller'))
 
 // app.use('/playlists', require('./controllers/playlist_controller'))
 
@@ -25,6 +26,8 @@ app.get('/', (req,res) => {
 app.get('*', (req, res) => {
     res.render('404')
 })
+
+
 
 
 // PORT 
