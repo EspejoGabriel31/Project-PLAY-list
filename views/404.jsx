@@ -8,6 +8,7 @@ function error404(){
                 <h1>404 : PAGE NOT FOUND</h1>
                 <p>
                         OOPSIE WOOPSIE!! Uwu We made a fucky wucky!! A wittle fucko boingo! The code monkeys at our headquarters are working VEWY HAWD to fix this!
+                        Dangerous game here my dudes
                         {/* MAKE SURE TO DELETE THIS LATER */}
                     </p>
                 <div>
