@@ -12,7 +12,7 @@ function new_playlist(data){
     return (
         <Def>
             <main>
-                <h1>Make a New PLAYlist</h1>
+                <h1>Create a New PLAYlist</h1>
                 {message}
                 <form method="POST" action="/playlists">
                     <div className="form-group">

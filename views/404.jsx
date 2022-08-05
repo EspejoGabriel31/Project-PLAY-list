@@ -6,8 +6,12 @@ function error404(){
         <Def>
             <main>
                 <h1>404 : PAGE NOT FOUND</h1>
-                <p>Page Not Found</p>
+                <p>
+                        OOPSIE WOOPSIE!! Uwu We made a fucky wucky!! A wittle fucko boingo! The code monkeys at our headquarters are working VEWY HAWD to fix this!
+                        {/* MAKE SURE TO DELETE THIS LATER */}
+                    </p>
                 <div>
+                    <img src="https://i.ytimg.com/vi/ffT2Ml_C5dI/hqdefault.jpg" alt="oh nyo" />
                     
                 </div>
             </main>
