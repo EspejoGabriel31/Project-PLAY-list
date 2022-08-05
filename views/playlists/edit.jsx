@@ -1,15 +1,15 @@
 const React = require('react')
-const Def = require('../default.jsx')
+const Def = require('../default')
 
-function edit_playlist(data) {
+function edit_playlist() {
     return(
         <Def>
             <main>
-                <h1>Edit Form</h1>
-                <form method="POST" action={`/places/${data.id}?_method=PUT`}>
+                <h1>Edit Playlist</h1>
+                <form method="POST" action="">
                     <div className="form-group">
                         <label htmlFor="playlist">Playlist Name</label>
-                        <input className="form-control" id="playlist" name="playlist" value= {data.playlist.name}/>
+                        <input className="form-control" id="playlist" name="playlist" value=""/>
                         </div>
                         {/* //cute pic here?
                         <div>

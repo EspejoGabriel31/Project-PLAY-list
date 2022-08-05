@@ -18,9 +18,12 @@ function new_playlist(data){
                     <div className="form-group">
                         <label htmlFor="name">Playlist Name</label>
                         <input className="form-control" id="name" name="name" required />
+                        </div>
+                        <div className="form-group">
                         <label htmlFor="playlistItem">Add Game</label>
                         <input className="form-control" id="game" name="game" required />
                     </div>
+                    <input className="btn btn-primary" type="submit" value="Add Place" />
                 </form>
             </main>
         </Def>
