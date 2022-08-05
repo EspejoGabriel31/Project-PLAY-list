@@ -19,6 +19,10 @@ app.get('/aboutUs', (req,res) =>{
     res.render('aboutUs')
 })
 
+app.get('/project', (req,res) => {
+    res.render('project')
+})
+
 app.get('/', (req,res) => {
     res.render('home')
 })
