@@ -14,6 +14,7 @@ const mongoose = require('mongoose')
  playlistSchema.methods.newPlaylist = function() {
    return `${this.name}`
  };
+ 
 const Playlist = mongoose.model('Playlist', playlistSchema);
 
  module.exports = Playlist
