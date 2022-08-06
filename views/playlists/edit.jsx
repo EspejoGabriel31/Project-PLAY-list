@@ -18,8 +18,9 @@ function edit_playlist() {
                     </div> */}
                     <div className="form-group">
                         <label htmlFor="games">Games</label>
-                        <input className="form-control" name="game"/>
+                        <input className="form-control" name="game" required/>
                     </div>
+                    <input className="btn btn-primary" type="submit" value="Add Playlist" />
                 </form>
             </main>
         </Def>
