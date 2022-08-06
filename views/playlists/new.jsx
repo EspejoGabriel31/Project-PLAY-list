@@ -23,7 +23,7 @@ function new_playlist(data){
                         <label htmlFor="playlistItem">Add Game</label>
                         <input className="form-control" id="game" name="game" required />
                     </div>
-                    <input className="btn btn-primary" type="submit" value="Add Place" />
+                    <input className="btn btn-primary" type="submit" value="Add Playlist" />
                 </form>
             </main>
         </Def>
