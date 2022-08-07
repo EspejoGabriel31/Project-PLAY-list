@@ -17,7 +17,7 @@ export default function About(){
                 <div class="container">
                   <h2 style={{color: 'black'}}>Angelo Abat</h2>
                   <p class="title" style={{color: 'black'}}>CEO Founder</p>
-                  <p style={{color: 'black'}}>Some text that describes me lorem ipsum ipsum lorem.</p>
+                  <p style={{color: 'black'}}>I love Food(Just a place holder).</p>
                   <p style={{color: 'black'}}>angeloabat25@gmail.com</p>
                   
                   <a href='https://www.linkedin.com/in/angelo-abat-57541b23a/'>

@@ -5,6 +5,7 @@ import './App.css';
 import Home from './components/Home'
 import New from './components/New';
 import About from './components/About';
+import GameCatalog from './components/GameCatalog';
 
 
 import Nav from 'react-bootstrap/Nav'
@@ -41,6 +42,11 @@ function App() {
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
+                <Nav.Link eventKey={"?"}>
+                  <Link to="/game-catalog">Game Catalog</Link>
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
                 <Nav.Link eventKey={"aboutPage"}>
                   <Link to="/about">About Us</Link>
                 </Nav.Link>
@@ -54,6 +60,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/new" element={<New />} />
+            <Route path="/game-catalog" element={<GameCatalog/>}/>
             <Route path="/about" element={<About />}/>
           </Routes>
         </div>

@@ -17,5 +17,8 @@
     "url": "https://github.com/EspejoGabriel31/Project-PLAY-list/issues"
   },
   "homepage": "https://github.com/EspejoGabriel31/Project-PLAY-list#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.0.1"
+  }
 }
