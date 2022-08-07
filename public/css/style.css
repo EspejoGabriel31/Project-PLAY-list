@@ -24,6 +24,11 @@ body{
     height: 1000px;
 }
 
+footer{
+  background-color: blueviolet;
+  padding:10px;
+}
+
 
 nav{
     background-color: blueviolet;

@@ -16,7 +16,7 @@ function Def (html) {
                             <a href='/'>Home</a>
                         </li>
                         <li>
-                            <a href='/playlists'>Playlist</a>
+                            <a href='/playlists/new'>Create</a>
                         </li>
                         <li>
                             <a href='/aboutUs'>About Us</a>
@@ -24,6 +24,9 @@ function Def (html) {
                     </ul>
                 </nav>
                 {html.children}
+                <footer>
+                    <ul></ul>
+                </footer>
             </body>
         </html>
     )
