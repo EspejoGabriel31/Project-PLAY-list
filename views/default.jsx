@@ -19,7 +19,7 @@ function Def (html) {
                             <a href='/playlists'>Playlist</a>
                         </li>
                         <li>
-                            <a href='/playlists/new'>New Playlist</a>
+                            <a href='/aboutUs'>About Us</a>
                         </li>
                     </ul>
                 </nav>
