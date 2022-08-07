@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Link, Routes, Route } from 'react-router-dom'
 
-// import {useState, useEffect} from 'react'
+import {useState, useEffect} from 'react'
 import './App.css';
 import Home from './components/Home'
 import New from './components/New';
@@ -12,15 +12,15 @@ import Container from 'react-bootstrap/Container'
 
 function App() {
 
-  // const [data, setData] = useState(null)
+  const [data, setData] = useState(null)
 
-  // useEffect(() => {
-  //   fetch('/api')
-  //   .then((res) => res.json())
-  //   .then((data) => {
-  //     setData(data.message)
-  //   })
-  // }, [])
+  useEffect(() => {
+    fetch('/api')
+    .then((res) => res.json())
+    .then((data) => {
+      setData(data.message)
+    })
+  }, [])
 
   return (
     <div className="App">
@@ -54,13 +54,13 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/new" element={<New />} />
-            <Route path="/" element={<About />}/>
+            <Route path="/about" element={<About />}/>
           </Routes>
         </div>
       </Router>
-        {/* <p>
+        <p>
           {!data ? 'Loading...' : data}
-        </p> */}
+        </p>
 
     </div>
   );
