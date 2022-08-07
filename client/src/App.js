@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Link, Routes, Route } from 'react-router-dom'
 
-import {useState, useEffect} from 'react'
+// import {useState, useEffect} from 'react'
 import './App.css';
 import Home from './components/Home'
 import New from './components/New';
@@ -12,15 +12,15 @@ import Container from 'react-bootstrap/Container'
 
 function App() {
 
-  const [data, setData] = useState(null)
+  // const [data, setData] = useState(null)
 
-  useEffect(() => {
-    fetch('/api')
-    .then((res) => res.json())
-    .then((data) => {
-      setData(data.message)
-    })
-  }, [])
+  // useEffect(() => {
+  //   fetch('/api')
+  //   .then((res) => res.json())
+  //   .then((data) => {
+  //     setData(data.message)
+  //   })
+  // }, [])
 
   return (
     <div className="App">
@@ -29,7 +29,7 @@ function App() {
         <header>
           <h1 className="title">PLAY-list</h1>
           <Container>
-            <Nav defaultActiveKey="/">
+            <Nav defaultActiveKey="/" variant="tabs" fill>
               <Nav.Item>
                 <Nav.Link href="/">
                 <Link to="/">Home</Link>
@@ -50,7 +50,7 @@ function App() {
         </header>
       
 
-        <div classNAme="display">
+        <div className="display">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/new" element={<New />} />
