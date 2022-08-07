@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -36,6 +37,7 @@
     transform: rotate(360deg);
   }
 }
+
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                       Scrollbar
@@ -78,7 +80,6 @@ nav{
   background-color: blueviolet;
   padding: 10px;
 }
-
 nav ul{
   list-style-type: none;
   margin: 0;
