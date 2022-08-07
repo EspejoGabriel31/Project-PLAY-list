@@ -1,5 +1,5 @@
 const React = require('react')
-import SearchBar from './components/SearchBar'
+import SearchBar from './home_components/components/SearchBar'
 
 function Def (html) {
     return (
