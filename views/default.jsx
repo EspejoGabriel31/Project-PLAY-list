@@ -1,4 +1,5 @@
 const React = require('react')
+import SearchBar from './components/SearchBar'
 
 function Def (html) {
     return (
@@ -25,7 +26,7 @@ function Def (html) {
                 </nav>
                 {html.children}
                 <footer>
-                    <ul></ul>
+                    <SearchBar />
                 </footer>
             </body>
         </html>
