@@ -7,7 +7,11 @@ const app = express()
 app.use(cors())
 
 
+
 app.use(express.static(path.resolve(__dirname, '../client/build')))
+
+
+app.use('/', require('./controllers/playlist_controller')) 
 
 //Handle GET requrests to /api route
 app.get('/api', (req, res) => {
@@ -15,6 +19,8 @@ app.get('/api', (req, res) => {
         message: "Hello from PLAY-list Server!"
     })
 })
+
+
 
 app.get('*', (req, res) => {
     res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'))
