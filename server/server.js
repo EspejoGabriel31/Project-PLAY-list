@@ -10,6 +10,10 @@ app.use(cors())
 
 app.use(express.static(path.resolve(__dirname, '../client/build')))
 
+// middleware
+app.use(express.json());
+app.use(express.urlencoded());
+
 
 app.use('/', require('./controllers/playlist_controller')) 
 
