@@ -2,6 +2,8 @@ import PlaylistItem from "./PlaylistItem";
 
 export default function Playlist(props) {
 
+    // console.log("FROM PLAYLIST: ", props.games)
+    
     let temp = props.games
 
     const display = temp.map((game, i) => {
