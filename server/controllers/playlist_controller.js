@@ -8,7 +8,7 @@ router.get('/test', (req,res) => { //Sends data to Client through test route
 
 //New playlist from client
 router.post('/new', (req,res) => {
-    console.log(req.body)
+    console.log("something", req.body)
 })
 
 
