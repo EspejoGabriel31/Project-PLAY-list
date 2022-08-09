@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react"
 import axios from "axios"
-// import Playlist from "./Playlist"
+import Playlist from "./Playlist"
 
 
 export default function Home(){
-    const [data, setData] = useState(null)
+    const [data, setData] = useState([])
 
     useEffect(() => {
         /*
@@ -22,11 +22,17 @@ export default function Home(){
 
     console.log("FROM HOME 1: ", data)
 /******************Testing if data exists***********************************/
-    if(data){
-        data.map((item, i) => {
-            console.log(i , item)
+    // if(data){
+        // data.map((item, i) => {
+        //     console.log(i , item)
+        // })
+        const render = data.map((playlist, i) => {
+        console.log("FROM RENDER LOOP: ", playlist)
+            return(
+                <Playlist key={i} name={playlist.name} games={playlist.games}/>
+            )
         })
-    }
+    // }
     
 
     // const render = data.map((playlist, i) => {
@@ -41,7 +47,7 @@ export default function Home(){
         <div>
             
             {/* <p>{!data ? 'Loading...' : name + ': ' + games} </p> */}
-            {/* {render} */}
+            {render}
         </div>
     )
 }
