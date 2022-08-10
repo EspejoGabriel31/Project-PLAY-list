@@ -57,6 +57,7 @@ export default function App() {
         <Playlist/>
       </DataContext.Provider>
       </div>
+      <Banner/>
     </Def>
   )
 }
