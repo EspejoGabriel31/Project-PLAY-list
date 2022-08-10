@@ -9,7 +9,7 @@ export default function Playlist(props) {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 4,
+        slidesToShow: 1,
         slidesToScroll: 1,
         cssEase: "linear"
     }
@@ -19,6 +19,7 @@ export default function Playlist(props) {
     let temp = props.games
 
     const display = temp.map((game, i) => {
+        console.log(i, game)
         return(
                 <PlaylistItem data={game} key={i}/>
         )
