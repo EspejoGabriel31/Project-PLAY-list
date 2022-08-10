@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap'
-import { ArrowRightCircle } from 'react-bootstrap-icons'
 import headerImg from '..//assets/img/header-img.svg'
 import TrackVisibility from 'react-on-screen';
 
@@ -8,11 +7,11 @@ import TrackVisibility from 'react-on-screen';
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ['Web Developer', 'Web Designer', 'UI/UX Designer'];
+    const toRotate = ['🕹️👾' ,'🛫💺', '🥷🏯', '💩🚽', '🚅💺', '🥳🎉', '👻','🏖️', '🕺💃','💘😍', '🌧️☔⚡', '😢☁️', '😡🤬' ];
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() *100);
     const [index, setIndex] = useState(1);
-    const period = 2000;
+    const period = 1000;
 
     useEffect(() => {
         let ticker = setInterval(() => {
@@ -56,8 +55,9 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 
-                <h1>{`List what you play, play what you list!`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <h1>{`A PlayList for every situation`} </h1>
+                <h1><span className="txt-rotate" dataPeriod="1000" data-rotate='[]'><span className="wrap">{text}</span></span></h1>
+                  <p>Do you ever feel overwhelmed by your backlog of games or don't know which games to bring in a specific situation? We got you covered! PlayList is the ultimate application that allows you to keep track of the games you want to play and create playlists for specific events such as parties, family gatherings, having a cold one with the boys, using the restroom, and much more! </p>
                    
               </div>}
             </TrackVisibility>

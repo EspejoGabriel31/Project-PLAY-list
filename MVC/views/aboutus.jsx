@@ -1,4 +1,5 @@
 const React = require('react')
+const { default: ImageSlider } = require('../../client/src/components/Slider')
 const Def = require('./default')
 
 

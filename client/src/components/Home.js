@@ -1,6 +1,11 @@
 import { useState, useEffect } from "react"
 import axios from "axios"
+
+import {Banner} from './Banner'
+// import Playlist from "./Playlist"
+
 import Playlist from "./Playlist"
+
 
 
 export default function Home(){
@@ -27,10 +32,16 @@ export default function Home(){
 
     return (
         <div>
+            <Banner/>
+            {/* <p>{!data ? 'Loading...' : name + ': ' + games} </p> */}
+            {/* {render} */}
+
             {render}
+
         </div>
     )
 }
+
 
 /*
 axios.get(“/test”).then(r => setData(r.data)))
