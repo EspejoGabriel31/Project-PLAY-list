@@ -2,16 +2,18 @@
 import { useState, useRef } from 'react';
 
 // Components 
-import Catalog from './GameCatalog/Catalog';
-import SearchBar from './GameCatalog/SearchBar';
-import { DataContext, SearchContext } from './GameCatalog/Context';
+import Catalog from './SearchCatalog/Catalog';
+import SearchBar from './SearchCatalog/SearchBar';
+import { DataContext, SearchContext } from './SearchCatalog/Context';
+import GameCata from './GameCatalog/MainCatalog';
 
 export default function GameCatalog(){
     let [data, setData] = useState([])
     let searchInput = useRef('')
     let [checkState, setCheckState] = useState(false)
-  
-    const rawgAPI = 'https://rawg.io/api/games?key=b54471c4e46549deb7bf64342ab6e282&search='
+
+    
+    const rawgAPI = `https://rawg.io/api/games?key=919ba869ff74422e921bb36cb595219b&search=`
   
   
     const handleSearch = (e, term) => {
@@ -45,7 +47,11 @@ export default function GameCatalog(){
             <Catalog />
           </DataContext.Provider>
           </div>
-          : []}
+          :
+          <div>
+            <GameCata></GameCata>
+          </div>
+          }
         </div>
     )
 }

@@ -1,4 +1,4 @@
-export default function CatalogItem(props){
+export default function GalleryItem(props){
 
     const ItemStyle = {
         'width' : '50%',
