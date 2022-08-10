@@ -9,10 +9,17 @@ export default function Edit() {
 
     let handleSubmit =async(e) => {
         e.preventDefault();
-        console.log(name, games)
-        axios.post('/edit', {name, games})
+        console.log(name, list)
+        if(list){
+            setGames(list.split(','))
+            if(games){
+                console.log("games: ", games)
+                axios.post('/edit', {name, games})
         .then(r => console.log("RESPONSE", r.data))
         .catch(e => console.log(e))
+            }
+        }
+
     }
     return(
         <div>
@@ -25,7 +32,7 @@ export default function Edit() {
                 </div>
             <div className="form-group">
                 <label htmlFor="playgamesItem">Edit Games</label>
-                <input className="form-control" id="list" name="list" value={list} onChange={(e) => setGames(e.target.value)} required/>
+                <input className="form-control" id="list" name="list" value={list} onChange={(e) => setList(e.target.value)} required/>
             </div>
             <input className="btn btn-primary" type="submit" />
         </form>
