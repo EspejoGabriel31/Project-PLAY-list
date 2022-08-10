@@ -40,14 +40,14 @@ export default function New() {
     return(
         <div>
             <main>
-                <h1>Create a New PLAYgames</h1>
+                <h1>Create a New PLAY-list</h1>
                 <form onSubmit={handleSubmit}  >
                     <div className="form-group">
-                        <label htmlFor="name">Playgames Name</label>
+                        <label htmlFor="name">Playlist Name</label>
                         <input className="form-control" id="name" name="name" value={name} onChange={(e) => setName(e.target.value)} required />
                     </div>
                     <div className="form-group">
-                        <label htmlFor="playgamesItem">Add Game</label>
+                        <label htmlFor="playgamesItem">Add Games in a Comma Separated List</label>
                         <input 
                             className="form-control" 
                             id="list" 

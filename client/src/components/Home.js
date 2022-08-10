@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import axios from "axios"
 import Playlist from "./Playlist"
-
+import { Banner } from "./Banner"
 
 export default function Home(){
     const [data, setData] = useState([])
@@ -44,7 +44,7 @@ export default function Home(){
     return (
         
         <div>
-            
+            <Banner />
             {/* <p>{!data ? 'Loading...' : name + ': ' + games} </p> */}
             {render}
         </div>

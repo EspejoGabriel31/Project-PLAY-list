@@ -69,6 +69,7 @@ function App() {
             <Route path="/game-catalog" element={<GameCatalog/>}/>
             <Route path="/about" element={<About />}/>
           </Routes>
+          {/* <Banner/> */}
         </div>
       </Router>
         <p>
