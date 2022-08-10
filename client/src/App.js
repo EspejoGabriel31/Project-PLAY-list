@@ -8,9 +8,12 @@ import New from './components/New';
 import About from './components/About';
 import GameCatalog from './components/GameCatalog';
 
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Nav from 'react-bootstrap/Nav'
 import Container from 'react-bootstrap/Container'
+import NavBar  from './components/NavBar';
+import { Banner } from './components/Banner';
+import  ImageSlider  from './/components/Slider'
 
 function App() {
 
@@ -25,6 +28,7 @@ function App() {
   }, [])
 
   return (
+    
     <div className="App">
 
       <Router>
@@ -69,8 +73,11 @@ function App() {
         <p>
           {!data ? 'Loading...' : data}
         </p>
-
+        <NavBar/>
+        <Banner/>
+        <ImageSlider/>
     </div>
+    
   );
 }
 
