@@ -10,8 +10,8 @@ router.get('/test', (req,res) => { //Sends data to Client through test route
 //CREATE
 router.post('/new', (req,res) => {
     console.log("something", req.body)
-    db.Playlist.create(req.body)
-    .then(() => {
+    db.Playlist.create(req.body)        //Create database entry based on data sent from New.js from client
+    .then(() => {                       
         console.log("workingg")
     })
     // console.log(req)

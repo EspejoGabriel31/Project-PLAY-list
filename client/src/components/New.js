@@ -1,24 +1,22 @@
 import { useState } from "react";
 import axios from 'axios'
 export default function New() {
-const [name, setName] = useState("")
-const [list, setList] = useState("")
-const [games, setGames] = useState([])
+    const [name, setName] = useState("")
+    const [list, setList] = useState("")
+    const [games, setGames] = useState([])
 
-let handleSubmit = async(e) => {
-    e.preventDefault();
-    console.log(name, list)
-    if(list){
-        setGames(list.split(','))
-        if(games){
-            console.log("games: ", games)
-            axios.post('/new', {name, games})
-                .then(r => console.log(r.data))
-                .catch(e => console.log(e))
+    let handleSubmit = async(e) => {
+        e.preventDefault();
+        console.log(name, list)
+        if(list){
+            setGames(list.split(','))                               //splits string into array based on ','
+            if(games){                                              //checks if games state exists
+                console.log("games: ", games)
+                axios.post('/new', {name, games})                   //sends data to playlist_controller.js in server to be saved to database
+                    .then(r => console.log("REPONSE: ", r.data))    //send back response
+                    .catch(e => console.log(e))                     //catches errors
+            }
         }
-        
-    }
-    
     } 
 //     try{
 //         /*
@@ -50,7 +48,13 @@ let handleSubmit = async(e) => {
                     </div>
                     <div className="form-group">
                         <label htmlFor="playgamesItem">Add Game</label>
-                        <input className="form-control" id="list" name="list" value={list} onChange={(e) => setList(e.target.value)}/>
+                        <input 
+                            className="form-control" 
+                            id="list" 
+                            name="list" 
+                            value={list} //
+                            onChange={(e) => setList(e.target.value)}
+                        />
                     </div>
                     <input type="submit" />
                 </form>

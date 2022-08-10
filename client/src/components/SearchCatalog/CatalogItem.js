@@ -1,5 +1,6 @@
 export default function GalleryItem(props){
 
+    console.log("CatalogItem: ", props)
     const ItemStyle = {
         'width' : '50%',
         'height' : '30vh',
@@ -11,11 +12,11 @@ export default function GalleryItem(props){
         'color' : 'black',
     }
 
-    const displayTags = props.item.tags.slice(0, 3).map((item,index) => {
-        return(
-            <p>{item.name}</p>
-        )
-    })
+    // const displayTags = props.item.tags.slice(0, 3).map((item,index) => {
+    //     return(
+    //         <p>{item.name}</p>
+    //     )
+    // })
 
         return(
             <div style={ItemStyle}>
