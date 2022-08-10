@@ -1,5 +1,6 @@
 export default function CatalogItem(props){
 
+    console.log("CatalogItem: ", props)
     const ItemStyle = {
         'width' : '50%',
         'height' : '30vh',

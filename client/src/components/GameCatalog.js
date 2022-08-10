@@ -11,7 +11,7 @@ export default function GameCatalog(){
     let searchInput = useRef('')
     let [checkState, setCheckState] = useState(false)
   
-    const rawgAPI = 'https://rawg.io/api/games?key=b54471c4e46549deb7bf64342ab6e282&search='
+    const rawgAPI = 'https://rawg.io/api/games?key=919ba869ff74422e921bb36cb595219b&search='
   
   
     const handleSearch = (e, term) => {
@@ -27,6 +27,9 @@ export default function GameCatalog(){
         }
       }
       fetchData()
+      if(data){
+        console.log("GAMECATALOG",data)
+      }
     }
 
   
