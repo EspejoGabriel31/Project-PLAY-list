@@ -70,21 +70,25 @@ export default function GameCata(){
         'backgroundRepeat' : 'no-repeat',
         'background-image': ``,
         'backgroundSize' : 'cover',
-        'color' : 'black',
+        'color' : 'white',
     }
 
     return(
         <div style={ItemStyle}>
             <DataContext.Provider value={actionData}>
+                <h2>Action</h2>
                 <Gallery/>
             </DataContext.Provider>
             <DataContext.Provider value={indieData}>
+                <h2>Indie</h2>
                 <Gallery/>
             </DataContext.Provider>
             <DataContext.Provider value={adventureData}>
+                <h2>Adventure</h2>
                 <Gallery/>
             </DataContext.Provider>
             <DataContext.Provider value={rpgData}>
+                <h2>RPG</h2>
                 <Gallery/>
             </DataContext.Provider>
         </div>
