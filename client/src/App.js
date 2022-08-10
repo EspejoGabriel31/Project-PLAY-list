@@ -74,8 +74,6 @@ function App() {
           {!data ? 'Loading...' : data}
         </p>
         <NavBar/>
-        <Banner/>
-        <ImageSlider/>
     </div>
     
   );

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import axios from "axios"
+import {Banner} from './Banner'
 // import Playlist from "./Playlist"
 
 
@@ -39,7 +40,7 @@ export default function Home(){
     return (
         
         <div>
-            
+            <Banner/>
             {/* <p>{!data ? 'Loading...' : name + ': ' + games} </p> */}
             {/* {render} */}
         </div>
