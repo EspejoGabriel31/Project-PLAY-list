@@ -4,7 +4,7 @@ const db= require("../models")
 
 //Send data to client
 router.get('/test', (req,res) => { //Sends data to Client through test route
-    // res.send(playlists)
+    res.send(playlists)
 })
 
 //CREATE

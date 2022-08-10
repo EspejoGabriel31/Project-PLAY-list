@@ -1,5 +1,5 @@
-
 import { BrowserRouter as Router, Link, Routes, Route } from 'react-router-dom'
+
 import {useState, useEffect} from 'react'
 
 import './App.css';
@@ -33,7 +33,8 @@ function App() {
 
       <Router>
         <header>
-          <h1 className="title">PLAY-list</h1>
+          <NavBar/>
+          {/* <h1 className="title">PLAY-list</h1>
           <Container>
             <Nav defaultActiveKey="/" variant="tabs" fill>
               <Nav.Item>
@@ -57,7 +58,7 @@ function App() {
                 </Nav.Link>
               </Nav.Item>
             </Nav>
-          </Container>
+          </Container> */}
         </header>
       
 
@@ -73,7 +74,9 @@ function App() {
         <p>
           {!data ? 'Loading...' : data}
         </p>
-        <NavBar/>
+        
+        {/* <Banner/> */}
+        {/* <ImageSlider/> */}
     </div>
     
   );

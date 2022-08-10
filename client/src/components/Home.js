@@ -1,11 +1,6 @@
 import { useState, useEffect } from "react"
 import axios from "axios"
-
-import {Banner} from './Banner'
-// import Playlist from "./Playlist"
-
 import Playlist from "./Playlist"
-
 
 
 export default function Home(){
@@ -24,24 +19,37 @@ export default function Home(){
         axios.get('/test').then(r => setData(r.data))
     }, [])
 
+    console.log("FROM HOME 1: ", data)
+/******************Testing if data exists***********************************/
+    // if(data){
+        // data.map((item, i) => {
+        //     console.log(i , item)
+        // })
         const render = data.map((playlist, i) => {
+        console.log("FROM RENDER LOOP: ", playlist)
             return(
                 <Playlist key={i} name={playlist.name} games={playlist.games}/>
             )
         })
+    // }
+    
+
+    // const render = data.map((playlist, i) => {
+    //     console.log("FROM RENDER LOOP: ", playlist)
+    // //     // return(
+    // //     //     <Playlist key={i} name={playlist.name} games={playlist.games}/>
+    // //     // )
+    // })
 
     return (
+        
         <div>
-            <Banner/>
+            
             {/* <p>{!data ? 'Loading...' : name + ': ' + games} </p> */}
-            {/* {render} */}
-
             {render}
-
         </div>
     )
 }
-
 
 /*
 axios.get(“/test”).then(r => setData(r.data)))

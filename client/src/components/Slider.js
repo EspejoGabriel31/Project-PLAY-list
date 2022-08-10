@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import angel from '..//assets/img/angel.jpg'
-//import '..//slider-css/Slider.css'
+import '..//slider-css/Slider.css'
 
 function ImageSlider() {
     let settings = {
@@ -51,7 +51,7 @@ function ImageSlider() {
             <div className="card-wrapper">
                 <div className="card">
                     <div className="card-image">
-                        <img src="images/7.jpg" />
+                        <img src='https://media.discordapp.net/attachments/1003381882198704278/1006772402358845470/97496889.png' />
                     </div>
                     <ul className="social-icons">
                         <li><a href="#"><i className="fa fa-facebook"></i></a></li>
@@ -60,14 +60,14 @@ function ImageSlider() {
                         <li><a href="#"><i className="fa fa-dribbble"></i></a></li>
                     </ul>
                     <div className="details">
-                        <h2>Gabriel Espejo<span className="job-title">UI Developer</span></h2>
+                        <h2>Gabriel Espejo<span className="job-title">Backend Developer</span></h2>
                     </div>
                 </div>
             </div>
             <div className="card-wrapper">
                 <div className="card">
                     <div className="card-image">
-                        <img src='https://media.discordapp.net/attachments/1003381882198704278/1006772402358845470/97496889.png' />
+                        <img src="images/7.jpg" />
                     </div>
                     <ul className="social-icons">
                         <li><a href="#"><i className="fa fa-facebook"></i></a></li>
