@@ -16,11 +16,10 @@ export default function Home(){
             // console.log("FROM USEEFFECT 2: ", data)
         })
         */
-        axios.get('/test').then(r => setData(r.data)
-        )
+        axios.get('/test').then(r => setData(r.data))
     }, [])
 
-    console.log("FROM HOME 1: ", data)
+    // console.log("FROM HOME 1: ", data)
 /******************Testing if data exists***********************************/
     // if(data){
         // data.map((item, i) => {
