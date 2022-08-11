@@ -62,19 +62,9 @@ export default function GameCata(){
         fetchRPGData()
     },[])
 
-    const ItemStyle = {
-        'width' : '50%',
-        'height' : '30vh',
-        'border' : '1px solid black',
-        'margin' : '2vh 25vw',
-        'backgroundRepeat' : 'no-repeat',
-        'background-image': ``,
-        'backgroundSize' : 'cover',
-        'color' : 'white',
-    }
 
     return(
-        <div style={ItemStyle}>
+        <div>
             <DataContext.Provider value={actionData}>
                 <h2>Action</h2>
                 <Gallery/>
