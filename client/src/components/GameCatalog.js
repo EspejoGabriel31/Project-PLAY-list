@@ -15,42 +15,43 @@ export default function GameCatalog(){
     const rawgAPI = `https://rawg.io/api/games?key=919ba869ff74422e921bb36cb595219b&search=`
   
     const handleSearch = (e, term) => {
-      e.preventDefault()
-      const fetchData = async() =>{
-        document.title = `${term} Database`
-        const response = await fetch(rawgAPI + term)
-        const resData = await response.json()
-        if (resData.results.length > 0){
-          setData(resData.results)
-        } else {
-          console.log('Not Found')
+      if(term.length === 0){
+        setCheckState(false)
+      } else{
+        setCheckState(true)
+        e.preventDefault()
+        const fetchData = async() =>{
+          document.title = `${term} Database`
+          const response = await fetch(rawgAPI + term)
+          const resData = await response.json()
+          if (resData.results.length > 0){
+            setData(resData.results)
+          } else {
+            console.log('Not Found')
+          }
         }
-      }
-      fetchData()
-      if(data){
-        console.log("GAMECATALOG",data)
+        fetchData()
+        if(data){
+          console.log("GAMECATALOG",data)
+        }
       }
     }
 
   
     return(
         <div>
-          {checkState ? (
-            <button onClick={() => setCheckState(false)}> false</button>
-          ) : (
-            <button onClick={() => setCheckState(true)}> true </button>
-          )}
-          {checkState ? <div>
           <SearchContext.Provider value={{term:searchInput,handleSearch: handleSearch}}>
             <SearchBar/>
           </SearchContext.Provider>
-          <DataContext.Provider value={data}>
-            <Catalog />
-          </DataContext.Provider>
+          {checkState ? 
+          <div>
+            <DataContext.Provider value={data}>
+              <Catalog />
+            </DataContext.Provider>
           </div>
           :
           <div>
-            <GameCata></GameCata>
+            <GameCata/>
           </div>
           }
         </div>

@@ -11,10 +11,9 @@ export default function SearchBar(){
         "padding" : "1vh"
     }
     return(
-        <form style={ShadowBackGround}>
+        <form style={ShadowBackGround} onSubmit={(e) => handleSearch(e, term.current.value)}>
             <p>Search Here</p>
             <input ref={term} type="text" placeholder='Search here'/>
-            <button onClick={(e) => handleSearch(e, term.current.value)}>Submit</button>
         </form>
     )
 }
