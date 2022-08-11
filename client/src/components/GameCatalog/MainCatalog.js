@@ -62,7 +62,7 @@ export default function GameCata(){
         fetchRPGData()
     },[])
 
-
+    
     return(
         <div>
             <DataContext.Provider value={actionData}>
