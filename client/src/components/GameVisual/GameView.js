@@ -24,11 +24,11 @@ export default function GameView(){
     return(
         <div style={color}>
             <h1>{gameData.name}</h1>
-            <img src={gameData.background_image}/>
+            <img style={{height: '600px', width: '1000px', borderRadius: '10px', maxWidth: '100%', height: 'auto'}} src={gameData.background_image}/>
+            <p>Synopsis</p>
+            {gameData.description_raw}
             <p>Release Date: {gameData.released}</p>
             <p>Ratings: {gameData.rating}</p>
-            <p>Description</p>
-            {gameData.description_raw}
         </div>
     )
 }
