@@ -9,10 +9,10 @@ export default function GameCata(){
     let [adventureData, setAdventureData] = useState([])
     let [rpgData, setRPGData] = useState([])
 
-    const ActionEndPoint = 'https://api.rawg.io/api/games?key=919ba869ff74422e921bb36cb595219basd&genre=action'
-    const IndieEndPoint  = 'https://api.rawg.io/api/games?key=919ba869ff74422e921bb36cb595219basd&genre=indie'
-    const AdventureEndPoint='https://api.rawg.io/api/games?key=919ba869ff74422e921bb36cb595219basd&genre=adventure'
-    const rpgEndPoint    = "https://api.rawg.io/api/games?key=919ba869ff74422e921bb36cb595219basd&genre=rpg"
+    const ActionEndPoint = 'https://api.rawg.io/api/games?key=919ba869ff74422e921bb36cb595219b&genre=action'
+    const IndieEndPoint  = 'https://api.rawg.io/api/games?key=919ba869ff74422e921bb36cb595219ba&genre=indie'
+    const AdventureEndPoint='https://api.rawg.io/api/games?key=919ba869ff74422e921bb36cb595219ba&genre=adventure'
+    const rpgEndPoint    = "https://api.rawg.io/api/games?key=919ba869ff74422e921bb36cb595219ba&genre=rpg"
 
     const fetchActionData = async() => {
         const response = await fetch(ActionEndPoint)
