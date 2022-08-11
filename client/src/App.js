@@ -7,6 +7,7 @@ import Home from './components/Home'
 import New from './components/New';
 import About from './components/About';
 import GameCatalog from './components/GameCatalog';
+import GameView from './components/GameVisual/GameView';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Nav from 'react-bootstrap/Nav'
@@ -68,6 +69,7 @@ function App() {
             <Route path="/new" element={<New />} />
             <Route path="/game-catalog" element={<GameCatalog/>}/>
             <Route path="/about" element={<About />}/>
+            <Route path="/games/:id" element={<GameView/>}/>
           </Routes>
           {/* <Banner/> */}
         </div>
