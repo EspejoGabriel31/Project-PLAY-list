@@ -4,7 +4,12 @@ const db= require("../models")
 
 //Send data to client
 router.get('/test', (req,res) => { //Sends data to Client through test route
-    res.send(playlists)
+    // res.send(playlists)
+    db.Playlist.find()
+    .then((playlists) => {
+        console.log("sending")
+        res.send(playlists)
+    })
 })
 
 //CREATE

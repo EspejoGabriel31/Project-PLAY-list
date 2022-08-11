@@ -1,5 +1,13 @@
 import { useState } from "react";
 import axios from 'axios'
+
+function removeSpaces(arr){
+    for(let i = 0; i < arr.length; i++){
+        arr[i] = arr[i].trim()
+    }
+    return arr
+}
+
 export default function New() {
     const [name, setName] = useState("")
     const [list, setList] = useState("")
@@ -9,7 +17,10 @@ export default function New() {
         e.preventDefault();
         console.log(name, list)
         if(list){
-            setGames(list.split(','))                               //splits string into array based on ','
+            let temp = list.split(',')
+            removeSpaces(temp)
+            setGames(temp)                               //splits string into array based on ','
+            
             if(games){                                              //checks if games state exists
                 console.log("games: ", games)
                 axios.post('/new', {name, games})                   //sends data to playlist_controller.js in server to be saved to database
