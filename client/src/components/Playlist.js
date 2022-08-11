@@ -5,15 +5,17 @@ import "slick-carousel/slick/slick-theme.css";
 import '..//slider-css/Slider.css'
 
 export default function Playlist(props) {
+    
+    
+    let temp = props.games
+
     let settings = {
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: temp.length < 3 ? temp.length : 3,
         slidesToScroll: 1,
         cssEase: "linear"
     }
-    
-    let temp = props.games
 
     const display = temp.map((game, i) => {
         return(
@@ -22,8 +24,8 @@ export default function Playlist(props) {
     })
 
     return (
-        <div>
-            <h1>{props.name}</h1>
+        <div className="playlist-body">
+            <h1 className="playlist-heading">{props.name}</h1>
             <Slider {...settings}>
                 {display} 
             </Slider>

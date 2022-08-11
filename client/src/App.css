@@ -120,6 +120,15 @@ h1, h3, h4, h5, h6 {
   color: white;
 }
 
+.playlist-body{
+  padding: 25px;
+}
+
+.playlist-heading{
+  text-align: left;
+  padding-left: 20px;
+}
+
 
 /*nav{
   background-color: blueviolet;
