@@ -1,4 +1,3 @@
-
 function PlaylistItem(props) {
 
     let temp = props.data

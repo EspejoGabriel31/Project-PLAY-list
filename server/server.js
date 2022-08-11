@@ -20,7 +20,7 @@ app.use('/', require('./controllers/playlist_controller'))
 //Handle GET requrests to /api route
 app.get('/api', (req, res) => {
     res.json({
-        message: "Hello from PLAY-list Server!"
+        message: "All systems online..."
     })
 })
 

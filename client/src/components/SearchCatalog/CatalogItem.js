@@ -2,7 +2,7 @@ export default function GalleryItem(props){
 
     console.log("CatalogItem: ", props)
     const ItemStyle = {
-        'width' : '50%',
+        'width' : '30vw',
         'height' : '30vh',
         'border' : '1px solid black',
         'margin' : '2vh 25vw',
@@ -10,6 +10,7 @@ export default function GalleryItem(props){
         'background-image': `url('${props.item.background_image}')`,
         'backgroundSize' : 'cover',
         'color' : 'black',
+        'display' : 'inline-block'
     }
 
     // const displayTags = props.item.tags.slice(0, 3).map((item,index) => {
