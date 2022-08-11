@@ -18,7 +18,7 @@ export default function GameCatalog(){
       if(term.length === 0){
         setCheckState(false)
       } else{
-        setCheckState(true)
+      if(checkState === false){setCheckState(true)}
         e.preventDefault()
         const fetchData = async() =>{
           document.title = `${term} Database`

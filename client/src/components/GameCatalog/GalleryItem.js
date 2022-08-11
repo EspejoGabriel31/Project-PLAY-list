@@ -16,7 +16,7 @@ export default function GalleryItem(props){
             <div style={ItemStyle}>
                 <div>
                     <h1>
-                        <a>
+                        <a href={`/games/${props.item.slug}`}>
                             {props.item.name}
                         </a>
                     </h1>
