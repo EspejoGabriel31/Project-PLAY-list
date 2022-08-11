@@ -15,6 +15,7 @@ import Container from 'react-bootstrap/Container'
 import NavBar  from './components/NavBar';
 import { Banner } from './components/Banner';
 import  ImageSlider  from './/components/Slider'
+import { Footer } from '../src/components/Footer'
 
 function App() {
 
@@ -80,6 +81,7 @@ function App() {
         
         {/* <Banner/> */}
         {/* <ImageSlider/> */}
+        <Footer/>
     </div>
     
   );

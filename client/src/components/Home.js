@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 import axios from "axios"
 import Playlist from "./Playlist"
 import { Banner } from "./Banner"
+import { Footer } from "./Footer"
 
 export default function Home(){
     const [data, setData] = useState([])
