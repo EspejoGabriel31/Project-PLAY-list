@@ -13,7 +13,7 @@ export default function Gallery(){
     })
     return(
         <div className='displayDiv'>
-            <div>{display}</div>
+            {display}
         </div> 
     )
 }
