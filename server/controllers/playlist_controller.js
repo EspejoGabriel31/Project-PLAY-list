@@ -2,9 +2,8 @@ const router = require('express').Router()
 const playlists = require('../models/playlists')
 const db= require("../models")
 
-//Send data to client
+//SHOW
 router.get('/test', (req,res) => { //Sends data to Client through test route
-    // res.send(playlists)
     db.Playlist.find()
     .then((playlists) => {
         console.log("sending")
@@ -23,17 +22,5 @@ router.post('/new', (req,res) => {
     res.send("worked")
 })
 
-/*
-router.post('/', (req,res) => {
-    db.Playlist.create(req.body)
-    .then(() => {
-        res.redirect('/playlists')
-    })
-    .catch(err => {
-        console.log('err', err)
-        res.render('error404')
-    })
-})
-*/
 
 module.exports = router

@@ -1,4 +1,6 @@
 import { useState } from "react";
+import {Navigate, useNavigate} from 'react-router-dom'
+
 import axios from 'axios'
 
 function removeSpaces(arr){
@@ -11,21 +13,32 @@ function removeSpaces(arr){
 export default function New() {
     const [name, setName] = useState("")
     const [list, setList] = useState("")
-    const [games, setGames] = useState([])
+    let games = null
+    const navigate = useNavigate()
 
     let handleSubmit = async(e) => {
         e.preventDefault();
+        
         console.log(name, list)
         if(list){
-            let temp = list.split(',')
-            removeSpaces(temp)
-            setGames(temp)                               //splits string into array based on ','
-            
+            let temp = list.split(',')                              //splits string into array based on ','
+            removeSpaces(temp)                                      //Cleans array of leading or trailing whitespace
+            console.log("TEMP: ", temp)
+            games = temp                               
             if(games){                                              //checks if games state exists
-                console.log("games: ", games)
                 axios.post('/new', {name, games})                   //sends data to playlist_controller.js in server to be saved to database
-                    .then(r => console.log("REPONSE: ", r.data))    //send back response
-                    .catch(e => console.log(e))                     //catches errors
+                    .then(r => {                                    //gets back response from server
+                        console.log("REPONSE: ", r.data)
+                        alert("Playlist Saved Successfully!")
+                        setName("")
+                        setList("")
+                        games = null
+                        navigate('/')                              //Redirects back to home page
+                    })    
+                    .catch(e => {
+                        console.log(e)                          //catches errors
+                        alert("Something went wrong!")
+                    })                     
             }
         }
     } 
@@ -73,3 +86,5 @@ export default function New() {
         </div>
     )
 }
+
+

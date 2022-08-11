@@ -17,7 +17,6 @@ export default function Playlist(props) {
     let temp = props.games
 
     const display = temp.map((game, i) => {
-        console.log(i, game)
         return(
                 <PlaylistItem data={game} key={i}/>
         )
