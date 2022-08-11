@@ -6,7 +6,7 @@ export default function Gallery(){
     const data = useContext(DataContext)
 
 
-    const display = data.splice(0, 3).map((item, index) => {
+    const display = data.splice(0, 10).map((item, index) => {
         return(
             <GalleryItem key={index} item={item} />
         )
