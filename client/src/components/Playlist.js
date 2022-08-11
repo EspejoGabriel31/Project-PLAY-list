@@ -13,8 +13,6 @@ export default function Playlist(props) {
         slidesToScroll: 1,
         cssEase: "linear"
     }
-
-    // console.log("FROM PLAYLIST: ", props.games)
     
     let temp = props.games
 
