@@ -107,7 +107,7 @@ body{
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: black !important;
+  background-color: #202020 !important;
   text-align: center;
   height: 1000px;
   font-family: 'Centra', sans-serif !important;
