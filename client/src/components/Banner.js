@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap'
-import headerImg from '..//assets/img/header-img.svg'
 import TrackVisibility from 'react-on-screen';
+import playlistImage from '..//assets/img/PlayList2.png'
+
 
 
 export const Banner = () => {
@@ -66,7 +67,7 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img className='resize' src={headerImg} alt="Header Img"/>
+                  <img className='resize' src={playlistImage} alt="Header Img"/>
                 </div>}
             </TrackVisibility>
           </Col>

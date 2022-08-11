@@ -3,7 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { useState, useEffect } from 'react';
 
-import logo from '../assets/img/logo.svg';
+import logo from '../assets/img/play-logo.svg';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 
        
