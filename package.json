@@ -22,5 +22,14 @@
   "bugs": {
     "url": "https://github.com/EspejoGabriel31/Project-PLAY-list/issues"
   },
-  "homepage": "https://github.com/EspejoGabriel31/Project-PLAY-list#readme"
+  "homepage": "https://github.com/EspejoGabriel31/Project-PLAY-list#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-react-views": "^0.11.0",
+    "mongoose": "^6.5.2",
+    "nodemon": "^2.0.19",
+    "react": "^18.2.0"
+  }
 }
