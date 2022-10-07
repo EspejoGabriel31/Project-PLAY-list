@@ -5,8 +5,10 @@
     "node": "16.13.2"
   },
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
+    "dev": "nodemon server",
+    "start": "node server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

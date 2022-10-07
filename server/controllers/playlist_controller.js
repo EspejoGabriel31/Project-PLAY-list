@@ -22,5 +22,21 @@ router.post('/new', (req,res) => {
     res.send("worked")
 })
 
+//UPDATE
+router.put('/:id', (req, res) => {
+    db.Playlist.findByIdAndUpdate(req.params.id, req.body)
+    .then(() => {
+
+    })
+})
+
+//DELETE
+router.delete('/:id', (req, res) => {
+    db.Place.findByIdAndDelete(req.params.id)
+    .then(() => {
+        
+    })
+})
+
 
 module.exports = router

@@ -8,6 +8,7 @@ import New from './components/New';
 import About from './components/About';
 import GameCatalog from './components/GameCatalog';
 import GameView from './components/GameVisual/GameView';
+import PlaylistView from './components/PlaylistView';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Nav from 'react-bootstrap/Nav'
@@ -16,6 +17,7 @@ import NavBar  from './components/NavBar';
 import { Banner } from './components/Banner';
 import  ImageSlider  from './/components/Slider'
 import { Footer } from '../src/components/Footer'
+
 
 function App() {
 
@@ -71,6 +73,7 @@ function App() {
             <Route path="/game-catalog" element={<GameCatalog/>}/>
             <Route path="/about" element={<About />}/>
             <Route path="/games/:id" element={<GameView/>}/>
+            <Route path="/playlist/:id" element={<PlaylistView />}/>
           </Routes>
           {/* <Banner/> */}
         </div>
